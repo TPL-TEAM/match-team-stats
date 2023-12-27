@@ -13,7 +13,7 @@ def resource_path(relpath):
 
 sa = gspread.service_account(filename=resource_path("service_account.json"))
 sh = sa.open("Wyniki statystyk")
-wks = sh.worksheet("test")
+wks = sh.worksheet("LIGI")
 
 def multicheck(Data):
     list1d = []
